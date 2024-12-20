@@ -1,16 +1,28 @@
 import React from 'react';
-import graceImage from '../images/grace.jpeg'; // Adjust the path as necessary
+import graceImage from '../assets/IMG_0511.JPG'; 
 
 const About = () => {
   return (
-    <section id="about" className="py-10" data-aos="fade-right">
-      <h2 className="text-4xl font-bold text-left mb-6">About</h2>
-      <div className="flex flex-col items-center lg:flex-row lg:items-start">
-        <img className="w-full lg:w-1/3 h-auto mb-6 lg:mb-0 lg:mr-6 rounded-lg" src={graceImage} alt="Grace Klassen" />
-        <div className="max-w-2xl mx-auto text-left">
-          <p className="text-lg text-gray-700">
-            Welcome to Grace Klassen Marketing Solutions. I specialize in providing top-notch marketing strategies that help businesses thrive in a competitive market. With a focus on creativity, innovation, and results, I am dedicated to helping you achieve your marketing goals.
+    <section id="about" className="py-16 bg-gradient-to-b from-white to-gray-50 text-gray-800" data-aos="fade-right">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
+        {/* Text Content */}
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h2 className="text-5xl font-extrabold mb-6 uppercase tracking-wide">About Me</h2>
+          <p className="text-lg leading-relaxed mb-6">
+            Welcome to <span className="font-bold text-blue-600">Grace Klassen Marketing Solutions</span>. I specialize in crafting innovative marketing strategies that empower businesses to thrive in today’s competitive market. My focus on creativity, results, and client success helps brands make a lasting impact.
           </p>
+          <p className="text-lg leading-relaxed">
+            Whether it’s developing a cohesive marketing plan, creating engaging content, or managing your social media presence, I’m here to guide you every step of the way.
+          </p>
+        </div>
+
+        {/* Image */}
+        <div className="lg:w-1/2 flex justify-center">
+          <img
+            className="w-full max-w-sm rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-500"
+            src={graceImage}
+            alt="Grace Klassen"
+          />
         </div>
       </div>
     </section>

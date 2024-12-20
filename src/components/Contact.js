@@ -9,15 +9,21 @@ const Contact = () => {
   }, []);
 
   return (
-    <section id="contact" className="py-10" data-aos="fade-up">
-      <h2 className="text-4xl font-bold text-center mb-6">Contact</h2>
-      <p className="text-lg text-gray-700 text-center mb-6">Feel free to schedule a consultation!</p>
-      <div className="max-w-3xl mx-auto">
-        <div className="mb-6">
+    <section id="contact" className="py-16 bg-gradient-to-b from-gray-250 to-gray-300 text-gray-800" data-aos="fade-up">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <h2 className="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 mb-6 uppercase tracking-wide">
+          Contact Me
+        </h2>
+        <p className="text-lg mb-8">
+          Ready to elevate your business? Schedule a consultation and let's make something amazing together!
+        </p>
+
+        {/* Calendly Widget */}
+        <div className="rounded-lg overflow-hidden shadow-xl">
           <div
             className="calendly-inline-widget"
             data-url="https://calendly.com/gracerebekahk/introductory-meeting"
-            style={{ minWidth: '320px', height: '1000px' }} // Increased height
+            style={{ minWidth: '320px', height: '1000px' }}  
           ></div>
         </div>
       </div>
